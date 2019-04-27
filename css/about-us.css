@@ -1,0 +1,33 @@
+/*
+Student: Ibrahim Jomaa
+Student ID: 300911528
+
+Note that this website uses CSS Grid Layout.
+Make sure your browser supports this CSS feature, otherwise this website will not display properly.
+*/
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+  "content__top"
+  "content__form";
+}
+
+.content__form {
+  grid-area: content__form;
+}
+
+.content__top {
+  grid-area: content__top;
+  padding: 20px;
+}
+
+form {
+  padding: 20px;
+}
+
+form > * {
+  margin-top: 10px;
+}
